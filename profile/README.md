@@ -1,17 +1,15 @@
 ## What is Hypermode?
 
-Hypermode is a toolkit for building AI-powered frontends.
+The app developer's missing operational framework to free AI from the lab and launch in production. Join the developers who skip the data science, write less code, build richer features, and ship faster.
 
-The toolkit consists of an SDK, an inference engine, and a datastore. With an SDK of shorthand methods for requesting inferences from your AI models, the engine allows you to chain together different services in the programming language you're most comfortable with. This is all enabled by a fully managed vector-graph datastore with model management, embedding automation, and analytics built-in.
+- Try a new model, in one line of code.
+- Tailor models, start with zero data.
+- Put models to work, with Hypermode Functions.
 
-## Who is Hypermode for?
+## What can you Ship with Hypermode?
 
-Hypermode is made for frontend developers.
-
-Our team has made multiple products for frontend developers. The top problems are always the same: you need to ship faster, you need to deliver a blazing fast ® UX, and you need security to sign off.
-
-You can trust Hypermode to deliver on all three.
+From vector search to retrieval-augmented generation (RAG), LLMs to customized open source models, Hypermode has everything you need to ship powerful AI features.
 
 ## How do I get started with Hypermode?
 
-If you're a frontend developer who would like early access, email hello@hypermode.com with what kind of AI you want in your frontend, and we'll get you onboarded.
+If you're an app developer who would like early access, email hello@hypermode.com with your first AI-powered feature and we'll get you onboarded.
