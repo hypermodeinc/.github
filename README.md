@@ -1,1 +1,1 @@
-This repo controls what the public sees at https://github.com/gohypermode
+This repo controls what the public sees at https://github.com/hypermodeAI
