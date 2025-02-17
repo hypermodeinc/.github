@@ -2,9 +2,13 @@ name: Check Do Not Merge
 
 on:
   pull_request:
-    branches: [ $default-branch ]
+    branches:
+      - main
     types:
       - opened
+      - reopened
+      - ready_for_review
+      - review_requested
       - labeled
       - unlabeled
 
@@ -15,7 +19,8 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'do not merge')
     runs-on: ubuntu-latest
     steps:
-      - name: Fail if do not merge label is applied
+      - name: Fail if PR is labeled do not merge
         run: |
-          echo "Cannot merge with `do not merge` label applied."
+          echo "This PR is labeled do not merge. Remove the label to pass this check."
           exit 1
+  
