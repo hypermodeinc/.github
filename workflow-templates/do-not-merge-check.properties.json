@@ -1,5 +1,0 @@
-{
-    "name": "Check Do Not Merge",
-    "description": "Block merging of PRs with `do not merge` label",
-    "iconName": "octicon no-entry"
-}
