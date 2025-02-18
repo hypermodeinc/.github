@@ -22,6 +22,11 @@ jobs:
     steps:
       - name: Fail if PR is labeled do not merge
         run: |
-          echo "This PR is labeled do not merge. Remove the label to pass this check."
-          exit 1
-  
+          echo "::notice::Merging permission is diabled for PRs when the `do not merge` label is applied."
+
+          if [ "${{ contains(github.event.pull_request.labels.*.name, 'do not merge') }}" = "true" ]; then
+            echo "::error::Pull request is labeled as `do not merge`. Please remove the label before merging."
+            exit 1
+          else
+            exit 0
+          fi
