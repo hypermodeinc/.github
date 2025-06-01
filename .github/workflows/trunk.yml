@@ -4,6 +4,8 @@ on:
 
 permissions:
   contents: read
+  actions: write
+  checks: write
 
 env:
   GOPRIVATE: github.com/hypermodeinc/*
